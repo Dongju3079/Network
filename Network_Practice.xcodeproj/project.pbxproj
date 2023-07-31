@@ -13,6 +13,13 @@
 		52DA8B912A772836003E8091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA8B8F2A772836003E8091 /* Main.storyboard */; };
 		52DA8B932A772837003E8091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DA8B922A772837003E8091 /* Assets.xcassets */; };
 		52DA8B962A772837003E8091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA8B942A772837003E8091 /* LaunchScreen.storyboard */; };
+		52DA8B9E2A7752D3003E8091 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA8B9D2A7752D3003E8091 /* Helper.swift */; };
+		52DA8BA52A775332003E8091 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA8BA42A775332003E8091 /* Network.swift */; };
+		52DA8BA72A77538A003E8091 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA8BA62A77538A003E8091 /* Music.swift */; };
+		52DA8BAA2A775BB5003E8091 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA8BA82A775BB5003E8091 /* MusicCell.swift */; };
+		52DA8BAB2A775BB5003E8091 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DA8BA92A775BB5003E8091 /* MusicCell.xib */; };
+		52DA8BAF2A777297003E8091 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA8BAE2A777297003E8091 /* SearchController.swift */; };
+		52DA8BB12A777A8F003E8091 /* CVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA8BB02A777A8F003E8091 /* CVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		52DA8B922A772837003E8091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DA8B952A772837003E8091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DA8B972A772837003E8091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DA8B9D2A7752D3003E8091 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		52DA8BA42A775332003E8091 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		52DA8BA62A77538A003E8091 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		52DA8BA82A775BB5003E8091 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		52DA8BA92A775BB5003E8091 /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		52DA8BAE2A777297003E8091 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		52DA8BB02A777A8F003E8091 /* CVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,60 @@
 			children = (
 				52DA8B892A772836003E8091 /* AppDelegate.swift */,
 				52DA8B8B2A772836003E8091 /* SceneDelegate.swift */,
-				52DA8B8D2A772836003E8091 /* ViewController.swift */,
-				52DA8B8F2A772836003E8091 /* Main.storyboard */,
-				52DA8B922A772837003E8091 /* Assets.xcassets */,
+				52DA8BA32A7752F2003E8091 /* Network */,
+				52DA8B9F2A7752D9003E8091 /* Helper */,
+				52DA8BA02A7752E3003E8091 /* Model */,
+				52DA8BA12A7752E7003E8091 /* View */,
+				52DA8BA22A7752EB003E8091 /* Controller */,
 				52DA8B942A772837003E8091 /* LaunchScreen.storyboard */,
 				52DA8B972A772837003E8091 /* Info.plist */,
+				52DA8B922A772837003E8091 /* Assets.xcassets */,
 			);
 			path = Network_Practice;
+			sourceTree = "<group>";
+		};
+		52DA8B9F2A7752D9003E8091 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				52DA8B9D2A7752D3003E8091 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		52DA8BA02A7752E3003E8091 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52DA8BA62A77538A003E8091 /* Music.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52DA8BA12A7752E7003E8091 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52DA8B8F2A772836003E8091 /* Main.storyboard */,
+				52DA8BA82A775BB5003E8091 /* MusicCell.swift */,
+				52DA8BA92A775BB5003E8091 /* MusicCell.xib */,
+				52DA8BB02A777A8F003E8091 /* CVCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52DA8BA22A7752EB003E8091 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52DA8B8D2A772836003E8091 /* ViewController.swift */,
+				52DA8BAE2A777297003E8091 /* SearchController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52DA8BA32A7752F2003E8091 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52DA8BA42A775332003E8091 /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DA8B962A772837003E8091 /* LaunchScreen.storyboard in Resources */,
+				52DA8BAB2A775BB5003E8091 /* MusicCell.xib in Resources */,
 				52DA8B932A772837003E8091 /* Assets.xcassets in Resources */,
 				52DA8B912A772836003E8091 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DA8BA52A775332003E8091 /* Network.swift in Sources */,
 				52DA8B8E2A772836003E8091 /* ViewController.swift in Sources */,
 				52DA8B8A2A772836003E8091 /* AppDelegate.swift in Sources */,
+				52DA8BB12A777A8F003E8091 /* CVCell.swift in Sources */,
+				52DA8BAF2A777297003E8091 /* SearchController.swift in Sources */,
 				52DA8B8C2A772836003E8091 /* SceneDelegate.swift in Sources */,
+				52DA8B9E2A7752D3003E8091 /* Helper.swift in Sources */,
+				52DA8BAA2A775BB5003E8091 /* MusicCell.swift in Sources */,
+				52DA8BA72A77538A003E8091 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +360,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allenSchool.Network-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,8 +390,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +399,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allenSchool.Network-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
